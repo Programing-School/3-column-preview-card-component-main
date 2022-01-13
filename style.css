@@ -1,0 +1,58 @@
+body {
+          /* background-color: #000; */
+          color: white;
+          box-sizing: border-box;
+}
+
+.flex-container {
+          display: flex;
+          transform: translateY(10%);
+          padding-left: 10%;
+          padding-right: 10%;
+}
+
+.flex-container div img {
+          padding: 50px;
+          width: 20%;
+}
+
+.flex-container div h1 {
+          padding-left: 40px;
+}
+
+.flex-container div p {
+          padding: 40px;
+          width: 70%;
+}
+
+.flex-container div img {
+          padding: 20px;
+}
+
+button {
+          --glow-color: white;
+          --glow-spread-color: rgba(191, 123, 255, 0.781);
+          --enhanced-glow-color: rgb(231, 206, 255);
+          --btn-color: rgb(100, 61, 136);
+          border: .25em solid var(--glow-color);
+          padding: 20px;
+          color: rgb(217, 176, 255);
+          font-size: 15px;
+          font-weight: bold;
+          background-color: transparent;
+          border-radius: 1em;
+          outline: none;
+          position: relative;
+          transition: all 0.3s;
+          cursor: pointer;
+          transform: translateX(40px) translateY(-20px);
+}
+
+button:hover {
+          background-color: var(--glow-color);
+          color: var(--btn-color);
+}
+
+#b {
+          transform: translateY(30px) translateX(40px);
+}
