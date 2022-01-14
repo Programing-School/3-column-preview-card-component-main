@@ -18,11 +18,11 @@ body {
 }
 
 .flex-container .curve {
-          border-radius: 0px 20px 20px 0px;
+          border-radius: 0px 5px 5px 0px;
 }
 
 .flex-container .curves {
-          border-radius: 20px 0px 0px 20px;
+          border-radius: 5px 0px 0px 5px;
 }
 
 .flex-container div .icon {
@@ -71,4 +71,27 @@ button:hover {
 
 #b {
           transform: translateY(33px) translateX(40px);
+}
+
+@media (max-width: 375px) {
+          .flex-container {
+                    flex-direction: column;
+          }
+
+          .flex-container div {
+                    margin: 0px;
+                    padding: 0px;
+          }
+
+          #b {
+                    transform: translateY(-15px) translateX(40px);
+          }
+
+          .flex-container .curve {
+                    border-radius: 0px 0px 5px 5px;
+          }
+
+          .flex-container .curves {
+                    border-radius: 5px 5px 0px 0px;
+          }
 }
